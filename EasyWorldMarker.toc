@@ -1,0 +1,7 @@
+## Interface: 40300
+## Title: Easy World Marker
+## Notes: Simple frame for using the world markers.
+## Author: Astiroth
+## Version: 0.0.1
+
+core.lua
