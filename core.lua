@@ -12,12 +12,12 @@ EasyMarkerFrame:SetMovable(true);
 EasyMarkerFrame:SetScript("OnDragStart", EasyMarkerFrame.StartMoving);
 EasyMarkerFrame:SetScript("OnDragStop", EasyMarkerFrame.StopMovingOrSizing);
 EasyMarkerFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 100, -100);
-EasyMarkerFrame:SetBackdropColor(.1, .1, .1, .5);
-EasyMarkerFrame:SetBackdropBorderColor(.2, .2, .2, .8);
+EasyMarkerFrame:SetBackdropColor(.1, .1, .1, .8);
+EasyMarkerFrame:SetBackdropBorderColor(.2, .2, .2, .9);
 EasyMarkerFrame:SetWidth(80);
 EasyMarkerFrame:SetHeight(110);
-EasyMarkerFrame:Show();
-local ewm_visible = true;
+EasyMarkerFrame:Hide();
+local ewm_visible = false;
 
 -- Create Marker Button function
 local function CreateEasyMarkerButton(btnName, btnText, point, relativeTo, pointRel)
