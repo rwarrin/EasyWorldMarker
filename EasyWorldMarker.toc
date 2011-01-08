@@ -2,6 +2,6 @@
 ## Title: Easy World Marker
 ## Notes: Simple frame for using the world markers.
 ## Author: Astiroth
-## Version: 0.0.1
+## Version: 1.0.0
 
 core.lua
