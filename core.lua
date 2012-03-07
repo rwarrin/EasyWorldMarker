@@ -40,38 +40,32 @@ end
 -- Create Marker Buttons
 CreateEasyMarkerButton("EWM_BlueFlare", "|cff71a1d4Blue Flare|r", "TOPLEFT", EasyMarkerFrame, "TOPLEFT");
 EWM_BlueFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button1
+/wm 1
 ]]);
 
 CreateEasyMarkerButton("EWM_GreenFlare", "|cff7de87fGreen Flare|r", "TOPLEFT", EWM_BlueFlare, "BOTTOMLEFT");
 EWM_GreenFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button2
+/wm 2
 ]]);
 
 CreateEasyMarkerButton("EWM_PurpleFlare", "|cffc05ef8Purple Flare|r", "TOPLEFT", EWM_GreenFlare, "BOTTOMLEFT");
 EWM_PurpleFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button3
+/wm 3
 ]]);
 
 CreateEasyMarkerButton("EWM_RedFlare", "|cfff1385bRed Flare|r", "TOPLEFT", EWM_PurpleFlare, "BOTTOMLEFT");
 EWM_RedFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button4
+/wm 4
 ]]);
 
 CreateEasyMarkerButton("EWM_YellowFlare", "|cfff5de61Yellow Flare|r", "TOPLEFT", EWM_RedFlare, "BOTTOMLEFT");
 EWM_YellowFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button5
+/wm 5
 ]]);
 
 CreateEasyMarkerButton("EWM_ClearFlare", "|cffFFFFFFClear Flares|r", "TOPLEFT", EWM_YellowFlare, "BOTTOMLEFT");
 EWM_ClearFlare:SetAttribute("macrotext", [[
-/click CompactRaidFrameManagerDisplayFrameLeaderOptionsRaidWorldMarkerButton
-/click DropDownList1Button6
+/cwm all
 ]]);
 
 local function EWM_Toggle()
