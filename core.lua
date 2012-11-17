@@ -23,7 +23,6 @@ dragtext:SetPoint("CENTER", EasyMarkerFrame, "CENTER", 1, -50);
 dragtext:SetJustifyH("CENTER")
 dragtext:SetJustifyV("Bottom");
 EasyMarkerFrame:Hide();
-local ewm_visible = false;
 
 -- Create Marker Button function
 local function CreateEasyMarkerButton(btnName, btnText, point, relativeTo, pointRel, btnType)
@@ -106,16 +105,20 @@ CreateEasyMarkerButton("EWM_ClearFlare", "|cffFFFFFFRemove Flares|r", "TOPLEFT",
 EWM_ClearFlare:SetAttribute("macrotext", "/cwm all");
 
 local function EWM_Toggle()
-	if(ewm_visible == true) then
-		EasyMarkerFrame:Hide();
-		ewm_visible = false;
-	else
-		EasyMarkerFrame:Show();
-		ewm_visible = true;
-	end
+    if(EasyMarkerFrame:IsShown()) then
+        EasyMarkerFrame:Hide();
+    else
+        EasyMarkerFrame:Show();
+    end
 end
 
 -- Create slash command
 SLASH_EASYWORLDMARKER1 = "/ewm";
 SLASH_EASYWORLDMARKER2 = "/wm";
-SlashCmdList["EASYWORLDMARKER"] = function() EWM_Toggle(); end
+SlashCmdList["EASYWORLDMARKER"] = function() 
+    if(EasyMarkerFrame:IsShown()) then
+        EasyMarkerFrame:Hide();
+    else
+        EasyMarkerFrame:Show();
+    end
+end
