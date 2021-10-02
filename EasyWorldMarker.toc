@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90105
 ## Title: Easy World Marker
 ## Notes: Simple frame for using the world markers.
 ## Author: Astiroth
