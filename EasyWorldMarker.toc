@@ -1,7 +1,7 @@
-## Interface: 90207
+## Interface: 100105
 ## Title: Easy World Marker
 ## Notes: Simple frame for using the world markers.
 ## Author: Astiroth
-## Version: 2.1.0
+## Version: 2.2.0
 
 core.lua
